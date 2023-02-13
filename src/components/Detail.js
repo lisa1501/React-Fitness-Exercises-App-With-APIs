@@ -7,8 +7,7 @@ import EquipmentImage from '../assets/icons/equipment.png';
 
 const Detail = ({ exerciseDetail }) => {
     const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
-    console.log(gifUrl);
-
+    
     const extraDetail = [
         {
             icon: BodyPartImage,
@@ -23,6 +22,7 @@ const Detail = ({ exerciseDetail }) => {
             name: equipment,
         },
     ];
+
     return (
         <Stack gap="60px" sx={{flexDirection: { lg:'row'}, p: '20px', alignItems: 'ceter'}}>
         <img src={gifUrl} alt={name} loading="lazy" 
@@ -36,7 +36,6 @@ const Detail = ({ exerciseDetail }) => {
                 <span style={{ textTransform: 'capitalize' }}>{name}</span> bup is one
                 of the best <br /> exercises to target your {target}. It will help you improve your{' '}
                 <br /> mood and gain energy.
-
             </Typography>
             {extraDetail?.map((item) => (
                 <Stack key={item.name} direction="row" gap="24px" alignItems="center">
@@ -47,7 +46,7 @@ const Detail = ({ exerciseDetail }) => {
                         {item.name}
                     </Typography>
                 </Stack>
-        ))}
+            ))}
         </Stack>
     </Stack>
     )

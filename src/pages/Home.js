@@ -19,7 +19,6 @@ function Home() {
                 setExercises={setExercises}
                 exercises={exercises}
                 bodyPart={bodyPart}
-                
             />
         </Box>
     )
