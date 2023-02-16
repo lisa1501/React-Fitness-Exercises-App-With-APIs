@@ -197,7 +197,7 @@ This page will provide users with selected exercise detail, related Youtube vide
 <br>
 
 ###  - similar exercise 
-![image](https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/exercisevideo.png)
+![image](https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/similiarexercies.png))
 <br>
 
 ```javascript
