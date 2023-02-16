@@ -57,6 +57,7 @@ users can search exercises by inputting a search bar or selecting a category fro
             setExercises(searchedExercises)
 ;        }
     }
+ }
 //---------------------------------exercises--------------------------------
 const Exercises = ({ setExercises, bodyPart, exercises}) => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -90,19 +91,16 @@ const Exercises = ({ setExercises, bodyPart, exercises}) => {
 
     if (!currentExercises.length) return <Loader />;
 }
-
  
 ```
 <br>
 
-## Exercise Detail
+## Exercise 
 This page will provide users with selected exercise detail, related Youtube videos, similar exercises and equipment.
 <br>
 
+###  - exercise detail
 ![image](https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/selectedexercisedetail.png)
-
-
-###  - Update item
 <br>
 
 ```javascript
@@ -154,9 +152,11 @@ This page will provide users with selected exercise detail, related Youtube vide
     )
 }
 ```
-![image]https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/exercisevideo.png
 <br>
 
+###  - exercise videos
+![image](https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/exercisevideo.png)
+<br>
 
 ```javascript
     
@@ -194,11 +194,15 @@ This page will provide users with selected exercise detail, related Youtube vide
         )
     }
 ```
-![image](https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/similiarexercies.png)
+<br>
 
+###  - similar exercise 
+![image](https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/exercisevideo.png)
+<br>
 
 ```javascript
-//--------------------------------similar exercises and equipments--------------------------------
+    
+    //--------------------------------similar exercises and equipments--------------------------------
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
     return (
         <Box sx={{ mt: { lg: '100px', xs: '0px' } }}>
@@ -217,10 +221,6 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         </Box>
     )
 }
- 
 ```
 <br>
-
-
-
 
