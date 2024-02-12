@@ -9,7 +9,7 @@ This page provided users with exercise detail, related exercise Youtube videos, 
 
 <br>
 # Technologies Used
- This application applied rapid API. The front end was created using Javascript and rendered using React. React was chosen for this project due to its lite footprint, quick response times to maximize user experience especially when there may be multiple query's happening per page, and strong ecosystem backing and support especially around libraries and other recourses to help maximize efficiency. 
+This application applied rapid API. The front end was created using Javascript and rendered using React. 
 <br>
 
 ![image](https://github.com/lisa1501/React-Fitness-Exercises-App-With-APIs/blob/main/src/images/herobanner.png)
